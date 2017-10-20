@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-2.2.2.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style type="text/css">
+    	*{
+    		text-shadow: none!important;
+    		box-shadow: none!important;
+    	}
+    	
+    	.header{
+    		background: rgb(22,144,237)!important;
+    		color: #ffffff!important;
+    		font-size: 20px;
+    		border:none!important;
+    		border-style:none!important ;
+    		border-width: none!important;
+    		}
+		.main{
+    		height: 800px;
+    		background: linear-gradient(rgb(22,144,237),#fff);
+    	}
+    	.head_icon{
+    		padding: 10px;
+    		text-align: center;
+    	}
+    	.head_icon img{
+    		border-radius:120px ;
+    		height: 150px;
+    		width: 150px;
+    	}
+    	#text{
+    		 
+    		width: 200px!important;
+    	}
+    	.my_submit{
+    		width: 200px!important;
+    	}
+    </style>
+</head>
+<body>
+	<div class="header" data-role="header" data-position="fixed" >
+        <h1>注 册</h1>    
+    </div>
+    
+    <div class="main">
+    	<div class="head_icon">
+    		<img src="images/qq.jpg"/>
+    	</div>
+    	
+    	<div class="" data-role="content">
+    		<div data-role="fieldcontain">
+            	<input type="text" name="text" id="text" placeholder="手机号/邮箱/账号" id="phone" required="required"  value=""  />
+    		</div>
+        	<div data-role="fieldcontain">
+        	    <input type="password" name="text" id="text" placeholder="请输入密码" id="password" value=""  />
+        	</div>
+        	<div data-role="fieldcontain">
+        	    <input type="password" name="text" id="text" placeholder="再次输入密码" id="password" value=""  />
+        	</div>
+        	<input type="submit" name="" id="submit" value="注册">
+        </div>  
+    	
+    	
+    </div>
+    <script type="text/javascript">
+    	var phone = document.getElementById('phone');
+		var password = document.getElementById('password');
+ 
+		
+    </script>
+</body>
+</html>
