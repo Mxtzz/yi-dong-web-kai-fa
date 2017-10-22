@@ -50,31 +50,29 @@
     	
     	<div class="" data-role="content">
     		<div data-role="fieldcontain">
-            	<span id="" style="">
-            		<input type="text" name="text" id="text" placeholder="手机号/邮箱/账号" value=""  />
-            	</span>
-        	</div>
-        	<div data-role="fieldcontain">
-        	    <input type="password" name="text" id="text" placeholder="请输入密码" value=""  />
-        	</div>
-        	<a href="index.html" data-role="button"  rel="external" >登录</a>
+            	<input type="text" id="acount" placeholder="手机号/邮箱/账号" value=""  />
+            	<input type="password" id="paw" placeholder="请输入密码" value=""  />
+       </div>
+        	<input type="submit" id="submit" value="登录" onclick="mylogin();">
         	<a href="register.html">立即注册</a>
         </div>  
     	
     	
     </div>
     <script type="text/javascript">
-		window.onload = function() {
-			var myInputNodes = document.getElementsByTagName("input");
-			for (var i=0; i<myInputNodes.length; ++i)
-			{
-				if (myInputNodes[i].type=="text")
-				{
-					myInputNodes[i].focus();
-					break;
-				} 
-			} 
-		}
+		function mylogin(){
+    		var acount = document.getElementById('acount').value;
+    		var paw = document.getElementById('paw').value;
+    		if(acount.length == 0){
+    			alert("请输入账号");
+    		}
+    		else if(paw.length == 0){
+    			alert("请输入密码");
+    		}
+    		else{
+    			window.location.href = 'index.html';
+    		}
+    	}
 	</script>
 </body>
 </html>
