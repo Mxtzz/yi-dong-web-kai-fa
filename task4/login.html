@@ -63,5 +63,18 @@
     	
     	
     </div>
+    <script type="text/javascript">
+		window.onload = function() {
+			var myInputNodes = document.getElementsByTagName("input");
+			for (var i=0; i<myInputNodes.length; ++i)
+			{
+				if (myInputNodes[i].type=="text")
+				{
+					myInputNodes[i].focus();
+					break;
+				} 
+			} 
+		}
+	</script>
 </body>
 </html>
