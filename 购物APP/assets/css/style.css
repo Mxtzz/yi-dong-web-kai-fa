@@ -1,0 +1,25 @@
+.mySearch form{
+	position: relative;
+	width: 100%;
+	height: 42px;
+	text-align: center;	
+}
+.mySearch input{
+	background: transparent;
+	border-bottom: 1.5px solid #FFF!important;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+}
+.mySearch button{
+	background: transparent;
+	position: absolute;
+	right: 0;
+	height: 42px;
+}
+.mySearch input, button {
+	border: none;
+	outline: none;
+}

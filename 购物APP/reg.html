@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Almost Zara</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style type="text/css">
+        #pageone{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .main{
+        	background: linear-gradient(#e07929,#fff);
+        	height: 600px;
+        }
+        .am-header{
+        	background: #F47920;
+        }
+        .head_icon{
+        	padding: 30px;
+        	text-align: center;
+        }
+        .head_icon img{
+    		border-radius:120px ;
+    		height: 150px;
+    		width: 150px;
+    		
+    	}
+    	#login{
+    		width: 90%;
+    		margin: 0 auto;
+    	}
+    	footer{
+    		text-align: center;
+    	}
+    </style>
+    <script type="text/javascript">
+		//自动获取焦点
+		window.onload = function() {
+			//获得所有input节点
+			var myInputNodes = document.getElementsByTagName("input");
+			for (var i=0; i<myInputNodes.length; ++i)
+			{
+			//if (myInputNodes[i].getAttribute("type") == "text")
+				if (myInputNodes[i].type=="text")
+				{
+				//聚焦该结点
+					myInputNodes[i].focus();
+					break;
+				} 
+			} 
+		}
+	</script>
+</head>
+<body>
+    <div id="pageone">
+        <!--页头-->
+        <header data-am-widget="header" class="am-header am-header-default">
+            <h1 class="am-header-title">注  册</h1>
+        </header>
+       	<!--主体-->
+        <article class="main">
+        	<!--选择头像-->
+        	<div class="head_icon">
+        		<img src="images/head-none.jpg"/>
+        	</div>
+        	<!--填写注册信息-->
+        	<form method="post" id="login" class="am-form">
+        		<!--输入账号-->
+        	    <label for="email" class="am-hide">邮箱:</label>
+        	    <input type="email" name="" id="email" value="" placeholder="用户名/邮箱/手机号">
+        	    <br>
+        	    <!--输入密码-->
+        	   	<label for="password" class="am-hide">密码:</label>
+        	   	<input type="password" name="" id="password" value="" placeholder="请输入密码">
+        	   	<br>
+        	   	<!--再次输入密码-->
+        	   	<label for="password" class="am-hide">密码:</label>
+        	   	<input type="password" name="" id="password" value="" placeholder="请再次输入密码">
+        	   	<br>
+        	   	<!--注册按钮-->
+        	   	<input type="submit" name="" value="注  册" class="am-btn am-btn-xl am-btn-block am-btn-warning am-round">
+        	   	<br />
+        	   	<!--已有账号？-->
+        	   	<a href="login.html" class="am-btn am-btn-sm am-fr">已有账号？</a>
+        	</form>
+        </article>
+        
+        <hr />
+        <footer data-am-widget="footer" class="">
+        	<p>© 2017 Powered by AmazeUI.  Designed by MaZw. </p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+		//自动获取焦点
+		window.onload = function() {
+			//获得所有input节点
+			var myInputNodes = document.getElementsByTagName("input");
+			for (var i=0; i<myInputNodes.length; ++i)
+			{
+			//if (myInputNodes[i].getAttribute("type") == "text")
+				if (myInputNodes[i].type=="text")
+				{
+				//聚焦该结点
+					myInputNodes[i].focus();
+					break;
+				} 
+			} 
+		}
+	</script>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
