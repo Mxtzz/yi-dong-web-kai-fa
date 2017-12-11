@@ -39,52 +39,67 @@
         .main{
         	height: 600px;
         }
+        
+        /*头样式*/
         .am-header{
         	background: #F47920;	
         }
-        .nav_1 img{
+        
+        /*商品列表*/
+    	.shop_list{
+    		width: 100%;
+    	}
+        .shop_list td{
+        	padding: 10px;
+        }
+        #shop_img img{
+        	width: 150px;
+        }
+        	/*商品名称*/
+        .shop_name{
+        	
+        }
+        .shop_delete{
+        	float: right;
+        }
+        	/*商品类型*/
+        .shop_class{
+        	color: #999;
+        	/*margin: 0;*/
+        }
+        	/*商品价格*/
+        #shop_price{
+        	font-size: 24px;
+        	color: #FF0000;
+        	
+        }
+        .text_box{
+        	width: 30px;
+        }
+        
+        /*footer样式*/
+        .am-navbar{
+        	box-shadow: 0 0 10px #ccc;
+        	background: #fff;
+        }
+        
+        #zongjia{
+        	text-align: center;
+        }
+        .zongjia_num{
+        	font-size: 26px;
+        	color: #ff0000;
+        }
+        .check_bill{
+        	padding: 0;
+        	background: #FF0000;
+        }
+        #check_bill{
         	width: 100%;
-        	height: 100%;
-        	margin-top: 20px;
-        }
-        .nav_1{
-        	text-align: center;
-        }
-        
-        .am-navbar-nav{
-        	background: #F47920!important;
-        	padding-top: 7px;
-        }
-        .am-btn{
-        	position: fixed;
-        	right:0px;	
-        }
-        .am-gallery li{
-        	box-shadow: 0 0 10px #ddd;
-        }
-        
-        .am-gallery h3{
-        	margin-top: 0!important;
-        	text-align: center;
-        }
-        .am-gallery h2{
-        	margin: 0!important;
-        	font-size: 24px!important;
-        	color: #FF0000!important;
-        	display: block;
-        	margin-right: 0!important;
-        	font-weight: bold!important;
-        }
-        .am-gallery p{
-        	font-size: 12px;
-        	float: right;
-        	margin-top: 15px;
-        	font-weight: normal;
-        	color: #aaa;
-        }
-        .am-gallery h4{
-        	margin: 0px!important;
-        	float: right;
+        	font-size: 22px;
+        	font-weight: bold;
+        	color:#fff;
+        	background: #FF0000;
         }
     </style>
 </head>
@@ -97,129 +112,145 @@
                     <i class="am-header-icon am-icon-chevron-left"></i>
                 </a>
             </div>
-            <div class="mySearch am-header-title">
-				<form class="">
-					<input type="text" placeholder="搜索商品" class="">
-					<button type="submit" value="搜索" class="am-icon-search"></button>
-				</form>
-			</div>
-            <div class="am-header-right am-header-nav">
-                <a href="#myCanvas" class="">
-                    <i class="am-header-icon am-icon-shopping-cart"></i>
-                </a>
+            <div class="am-header-title">
+            	<h3>购物车</h3>
             </div>
+            
         </header>
        	<!--主体-->
         <div class="main">
         	<!--导航栏-->
         	
 	        <!--商品列表-->
-	        <div class="shop">
+	        <form class="">
+	        	<table class="shop_list" border="0" cellspacing="" cellpadding="">
+	        		<tr>
+	        			<label>
+	        				<td width="30px">
+	        					<input type="checkbox" name="" value="">
+	        				</td>
+			        		<td id="shop_img">
+			        			<img src="images/shop1.jpg"/>
+			        		</td>
+			        		<td>
+			        			<div class="">
+		    						<span class="shop_name">安利纽崔莱</span>
+		    						<span class="shop_delete">
+		    							<button class="am-icon-trash-o"></button>
+		    						</span>
+		    						<p class="shop_class">大瓶，L</p>
+		    						
+		    						<table id="tab"> 
+										<tr> 
+											<td> 
+											<span class="" id="shop_price">￥</span>
+											<span class="price" id="shop_price">1.50</span>
+												<div class="">
+													<input class="min" name="" type="button" value="-" /> 
+													<input class="text_box" name="" type="text" value="1" /> 
+													<input class="add" name="" type="button" value="+" /> 
+												</div>
+											</td>
+								
+										</tr>
+									</table> 
+									
+		    					</div>
+			        		</td>
+		    			</label>
+	        		</tr>
+	        		
+	        		<tr>
+	        			<label>
+	        				<td width="30px">
+	        					<input type="checkbox" name="" value="">
+	        				</td>
+			        		<td id="shop_img">
+			        			<img src="images/shop1.jpg"/>
+			        		</td>
+			        		<td>
+			        			<div class="">
+		    						<span class="shop_name">安利纽崔莱</span>
+		    						<span class="shop_delete">
+		    							<button class="am-icon-trash-o"></button>
+		    						</span>
+		    						<p class="shop_class">大瓶，L</p>
+		    						
+		    						<table id="tab"> 
+										<tr> 
+											<td> 
+											<span class="" id="shop_price">￥</span>
+											<span class="price" id="shop_price">1.50</span>
+												<div class="">
+													<input class="min" name="" type="button" value="-" /> 
+													<input class="text_box" name="" type="text" value="1" /> 
+													<input class="add" name="" type="button" value="+" /> 
+												</div>
+											</td>
+								
+										</tr>
+									</table> 
+									
+		    					</div>
+			        		</td>
+		    			</label>
+	        		</tr>
+	        		<!--<tr>
+	        			<label>
+	        				<td width="30px">
+	        					<input type="checkbox" name="" value="">
+	        				</td>
+			        		<td id="shop_img">
+			        			<img src="images/shop1.jpg"/>
+			        		</td>
+			        		<td>
+			        			<div class="">
+		    						<span class="shop_name">安利纽崔莱</span>
+		    						<span class="shop_delete">
+		    							<button class="am-icon-trash-o"></button>
+		    						</span>
+		    						<p class="shop_class">大瓶，L</p>
+		    						
+		    						<table id="tab"> 
+										<tr> 
+											<td> 
+											<span class="" id="shop_price">￥</span>
+											<span class="price" id="shop_price">1.50</span>
+											&nbsp;
+											<input class="min" name="" type="button" value="-" /> 
+											<input class="text_box" name="" type="text" value="1" /> 
+											<input class="add" name="" type="button" value="+" /> 
+											</td> 
+										</tr>
+									</table> 
+									
+		    					</div>
+			        		</td>
+		    			</label>
+	        		</tr>-->
+	        		
+	        	</table>
 	        	
-	        	<ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{  }" >
-			    	<li  data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-				</ul>
-				<br /><br />
-	        </div>
+	        </form>    	
+	        
         </div>
         
-    	<button data-am-smooth-scroll class="am-btn am-round am-icon-arrow-up"></button>
+    	<!--<button data-am-smooth-scroll class="am-btn am-round am-icon-arrow-up"></button>-->
         <!--底部导航-->
-        <!--<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
-          <ul class="am-navbar-nav am-cf am-avg-sm-4">
-                <li >
-                    <a href="#" class="am-icon-home am-icon-sm">
-                        <span class="am-navbar-label">首页</span>
-                    </a>
-                </li>
-                <li >
-                    <a href="#" class="am-icon-cab am-icon-sm">
-                        <span class="am-navbar-label">物流</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="am-icon-shopping-cart am-icon-sm">
-                        <span class="am-navbar-label">购物车</span>
-                    </a>
-                </li>
-                <li >
-                    <a href="#" class="am-icon-user am-icon-sm">
-                        <span class="am-navbar-label">我</span>
-                    </a>
-                </li>
-            </ul>
-        </div>-->
+        <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
+    		<div class="am-g">
+				<div class="am-u-sm-3" id="zongjia">
+					<h2>合计：</h2>
+				</div>
+				<div class="am-u-sm-5 zongjia_num">
+					<p>￥<label id="total"></label></p>
+				</div>
+				
+				<div class="am-u-sm-4 check_bill" id="" >
+					<button type="button" class="" id="check_bill">结&nbsp;算</button>
+				</div>
+			</div>
+        </div>
         
         <!--侧边栏-->
         
@@ -229,5 +260,33 @@
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
+    <script type="text/javascript">
+    	
+    	$(function(){ 
+			$(".add").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())+1) 
+				setTotal(); 
+			}) 
+			$(".min").click(function(){ 
+				var t=$(this).parent().find('input[class*=text_box]'); 
+				t.val(parseInt(t.val())-1) 
+				if(parseInt(t.val())<0){ 
+					t.val(0); 
+				} 
+			setTotal(); 
+			}) 
+			function setTotal(){ 
+				var s=0; 
+				$("#tab td").each(function(){
+					s+=parseInt($(this).find('input[class*=text_box]').val())*parseFloat($(this).find('span[class*=price]').text()); 
+				}); 
+				$("#total").html(s.toFixed(2)); 
+			} 
+			setTotal(); 
+			
+		}) 
+
+    </script>
 </body>
 </html>
