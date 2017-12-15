@@ -30,62 +30,10 @@
     <meta name="msapplication-TileColor" content="#0e90d2">
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index-2.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <style type="text/css">
-        #pageone{
-            margin: 0 auto;
-            width: 100%;
-        }
-        .main{
-        	height: 600px;
-        }
-        .am-header{
-        	background: #F47920;	
-        }
-        .nav_1 img{
-        	width: 100%;
-        	height: 100%;
-        	margin-top: 20px;
-        }
-        .nav_1{
-        	text-align: center;
-        }
         
-        .am-navbar-nav{
-        	background: #F47920!important;
-        	padding-top: 7px;
-        }
-        .am-btn{
-        	position: fixed;
-        	right:0px;	
-        }
-        .am-gallery li{
-        	box-shadow: 0 0 10px #ddd;
-        }
-        
-        .am-gallery h3{
-        	margin-top: 0!important;
-        	text-align: center;
-        }
-        .am-gallery h2{
-        	margin: 0!important;
-        	font-size: 24px!important;
-        	color: #FF0000!important;
-        	display: block;
-        	margin-right: 0!important;
-        	font-weight: bold!important;
-        }
-        .am-gallery p{
-        	font-size: 12px;
-        	float: right;
-        	margin-top: 15px;
-        	font-weight: normal;
-        	color: #aaa;
-        }
-        .am-gallery h4{
-        	margin: 0px!important;
-        	float: right;
-        }
     </style>
 </head>
 <body>
@@ -97,11 +45,12 @@
                     <i class="am-header-icon am-icon-chevron-left"></i>
                 </a>
             </div>
-            <div class="mySearch am-header-title">
-				<form class="">
-					<input type="text" placeholder="搜索商品" class="">
-					<button type="submit" value="搜索" class="am-icon-search"></button>
-				</form>
+            <div class="am-header-title">
+            	<div class="mySearch">
+            		<input type="text" placeholder="搜索商品" id="shopitem" name="search">
+					<button name="search" id="search" class="am-icon-search"></button>	
+            	</div>
+				
 			</div>
             <div class="am-header-right am-header-nav">
                 <a href="cart.html" class="">
@@ -111,123 +60,19 @@
         </header>
        	<!--主体-->
         <div class="main">
-        	<!--导航栏-->
-        	
 	        <!--商品列表-->
-	        <div class="shop">
+	        <ul  id="goodList" data-am-widget="gallery" class="content am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{  }" >
 	        	
-	        	<ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{  }" >
-			    	<li  data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-			    	<li data-am-scrollspy="{animation: 'fade', delay: 100}">
-			        	<div class="am-gallery-item">
-			            	<a href="" class="">
-			            		<img src="images/shop1.jpg"  alt=""/>
-			                	<h3 class="am-gallery-title">安利纽崔莱2017款特价双12</h3>
-			                	<h2 class="am-gallery-title">￥1221 <p>已售2000件</p></h2>
-			            	</a>
-			        	</div>	
-			    	</li>
-				</ul>
-				<br /><br />
-	        </div>
+	        </ul>
         </div>
         
-    	<button data-am-smooth-scroll class="am-btn am-round am-icon-arrow-up"></button>
-        <!--底部导航-->
-        <!--<div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
-          <ul class="am-navbar-nav am-cf am-avg-sm-4">
-                <li >
-                    <a href="#" class="am-icon-home am-icon-sm">
-                        <span class="am-navbar-label">首页</span>
-                    </a>
-                </li>
-                <li >
-                    <a href="#" class="am-icon-cab am-icon-sm">
-                        <span class="am-navbar-label">物流</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="am-icon-shopping-cart am-icon-sm">
-                        <span class="am-navbar-label">购物车</span>
-                    </a>
-                </li>
-                <li >
-                    <a href="#" class="am-icon-user am-icon-sm">
-                        <span class="am-navbar-label">我</span>
-                    </a>
-                </li>
-            </ul>
-        </div>-->
-        
-        <!--侧边栏-->
-        
+    	<button data-am-smooth-scroll class="top am-btn am-round am-icon-arrow-up"><br />TOP</button>
         
     </div>
 
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/index-2.js"></script>
 </body>
 </html>

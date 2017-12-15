@@ -52,31 +52,18 @@
     		width: 150px;
     		
     	}
-    	#login{
-    		width: 90%;
+    	span{
+    		color: #FF0000;
+    	}
+    	.am-form{
+    		width: 80%;
     		margin: 0 auto;
     	}
     	footer{
     		text-align: center;
     	}
     </style>
-    <script type="text/javascript">
-		//自动获取焦点
-		window.onload = function() {
-			//获得所有input节点
-			var myInputNodes = document.getElementsByTagName("input");
-			for (var i=0; i<myInputNodes.length; ++i)
-			{
-			//if (myInputNodes[i].getAttribute("type") == "text")
-				if (myInputNodes[i].type=="text")
-				{
-				//聚焦该结点
-					myInputNodes[i].focus();
-					break;
-				} 
-			} 
-		}
-	</script>
+    
 </head>
 <body>
     <div id="pageone">
@@ -85,58 +72,43 @@
             <h1 class="am-header-title">注  册</h1>
         </header>
        	<!--主体-->
-        <article class="main">
+        <div class="main">
         	<!--选择头像-->
         	<div class="head_icon">
         		<img src="images/head-none.jpg"/>
         	</div>
         	<!--填写注册信息-->
-        	<form method="post" id="login" class="am-form">
+        	<div class="am-form">
         		<!--输入账号-->
-        	    <label for="email" class="am-hide">邮箱:</label>
-        	    <input type="email" name="" id="email" value="" placeholder="用户名/邮箱/手机号">
+        	    <input type="text" name="username" id="username" value="" placeholder="用户名/邮箱/手机号" required>
         	    <br>
-        	    <!--输入密码-->
-        	   	<label for="password" class="am-hide">密码:</label>
-        	   	<input type="password" name="" id="password" value="" placeholder="请输入密码">
+
+        	   	<input type="password" id="password" value="" placeholder="请输入密码" required>
         	   	<br>
+        	   	
         	   	<!--再次输入密码-->
-        	   	<label for="password" class="am-hide">密码:</label>
-        	   	<input type="password" name="" id="password" value="" placeholder="请再次输入密码">
+        	   	<input type="password" id="password2" value="" placeholder="请再次输入密码" required>
         	   	<br>
+        	   	
         	   	<!--注册按钮-->
-        	   	<input type="submit" name="" value="注  册" class="am-btn am-btn-xl am-btn-block am-btn-warning am-round">
+        	   	<button id="btn" class="am-btn am-btn-xl am-btn-block am-btn-warning am-round">注册</button>
         	   	<br />
         	   	<!--已有账号？-->
         	   	<a href="login.html" class="am-btn am-btn-sm am-fr">已有账号？</a>
-        	</form>
-        </article>
+        	</div>
+        	
+        </div>
         
         <hr />
         <footer data-am-widget="footer" class="">
-        	<p>© 2017 Powered by AmazeUI.  Designed by MaZw. </p>
+        	<p>© 2017 Powered by AmazeUI. </p>
         </footer>
     </div>
-    <script type="text/javascript">
-		//自动获取焦点
-		window.onload = function() {
-			//获得所有input节点
-			var myInputNodes = document.getElementsByTagName("input");
-			for (var i=0; i<myInputNodes.length; ++i)
-			{
-			//if (myInputNodes[i].getAttribute("type") == "text")
-				if (myInputNodes[i].type=="text")
-				{
-				//聚焦该结点
-					myInputNodes[i].focus();
-					break;
-				} 
-			} 
-		}
-	</script>
-
+    
+	
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/reg.js"></script>
 </body>
 </html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tmall Almost</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>-->
+    <style type="text/css">
+        .am-header{
+        	background: #F47920;	
+        }
+        .head_icon img{
+    		width: 100px;
+    		margin-top: 15px;
+    		margin-left: 15px;
+    	}
+    	.head_icon{
+    		display: block;
+    	}
+    	.head_title{
+    		display: block;
+    		float: right;
+    		margin-right: 100px;
+    		margin-top: 15px;
+    		width: 40%;
+    	}
+    	
+        .am-navbar-nav{
+        	background: #F47920!important;
+        	padding-top: 7px;
+        }
+        .am-btn{
+        	width: 100%;
+        	/*margin: 0 auto;*/
+        	background: #ff0000;
+        	
+        }
+    </style>
+</head>
+<body>
+    <div id="pageone">
+        <!--页头-->
+        <header data-am-widget="header" class="am-header am-header-fixed am-header-default"> 
+        	<div class="am-header-left am-header-nav ">
+                <a href="index-1.html" class="">
+                    <i class="am-header-icon am-icon-chevron-left"></i>
+                </a>
+            </div>
+            <div class="am-header-title">
+				<p>个人中心</p>
+			</div>
+        </header>
+       	<!--主体-->
+        <div class="main">
+        	<div class="head_icon">
+        		<img src="images/class11.png"/>
+        		<div  class="head_title">
+        			<h1 class="username"></h1>
+        			<p>河北 石家庄</p>
+        		</div>
+        		
+       		</div>
+        	<hr />
+        	<nav data-am-widget="menu" class="am-menu  am-menu-stack"> 
+			    <ul class="am-menu-nav am-avg-sm-1">
+			          <li class="am-parent">
+			            <a href="##" class="am-icon-map-marker" > 我的收货地址</a>
+			              
+			          </li>
+			          <li class="am-parent">
+			            <a href="##" class="am-icon-close" > 账户与安全</a>
+			              
+			          </li>
+			          <li class="am-parent">
+			            <a href="#c3" class="am-icon-home" > 地区设置</a>
+			              
+			          </li>
+			          <li class="am-parent">
+			            <a href="##" class="am-icon-volume-up" > 音效和通知</a>
+			              
+			          </li>
+			          <li class="">
+			            <a href="##" class="am-icon-eye" > 隐私</a>
+			          </li>
+			          
+			          <li class="">
+			            <a href="##" class="am-icon-cog" > 通用</a>
+			          </li>
+			      </ul>
+
+  			</nav> 
+        </div>
+        <hr />
+        
+        <!--底部导航-->
+        <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
+        	<a href="login.html" class="am-btn"><h1>退出登录</h1></a>
+        	
+        </div>
+        
+        
+    </div>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script type="text/javascript">
+    	
+    	$('.am-btn').click(function(){
+			localStorage.removeItem("username");
+	        window.location.href="login.html";
+		});
+		
+		var userId=localStorage.getItem('username');
+		$.ajax({
+				type:"get",
+				url:'http://datainfo.duapp.com/shopdata/getuser.php',
+				dataType:'jsonp',
+				data:{userID:userId},
+				success:function(data){
+					$('.username').html(data[0].userID);
+				},
+				error:function(){
+				}
+			});
+    </script>
+</body>
+</html>

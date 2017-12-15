@@ -1,0 +1,67 @@
+#pageone{
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .am-header{
+            background: #F47920;    
+        }
+        
+        /*商品列表*/
+        .am-intro-title{
+        	overflow: hidden;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+			width: 50%;
+        }
+        .choice{
+        	margin-top: 15px!important;
+        }
+       	.goodPrice{
+       		color: #FF0000;
+       	}
+       	#shopdel{
+       		float: right;
+       		margin-right: 20px!important;
+       	}
+            /*商品类型*/
+        .shop_class{
+            color: #999;
+        }
+        
+        
+            /*商品价格*/
+        #shop_price{
+            font-size: 24px;
+            color: #FF0000;
+            
+        }
+        .text_box{
+            width: 30px;
+        }
+        
+        /*footer样式*/
+        .am-navbar{
+            box-shadow: 0 0 10px #ccc;
+            background: #fff;
+            
+        }
+        
+        #zongjia{
+            text-align: center;
+        }
+        .zongjia_num{
+            font-size: 26px;
+            color: #ff0000;
+        }
+        .check_bill{
+            padding: 0;
+            background: #FF0000;
+        }
+        #check_bill{
+            width: 100%;
+            font-size: 22px;
+            font-weight: bold;
+            color:#fff;
+            background: #FF0000;
+        }

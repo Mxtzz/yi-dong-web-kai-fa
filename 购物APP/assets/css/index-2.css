@@ -1,0 +1,54 @@
+#pageone{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .main{
+        	height: 600px;
+        }
+        .am-header{
+        	background: #F47920;	
+        }
+        .nav_1 img{
+        	width: 100%;
+        	height: 100%;
+        	margin-top: 20px;
+        }
+        .nav_1{
+        	text-align: center;
+        }
+        
+        .am-navbar-nav{
+        	background: #F47920!important;
+        	padding-top: 7px;
+        }
+        .top{
+        	position: fixed;
+        	right:0px;	
+        }
+        .am-gallery li{
+        	box-shadow: 0 0 10px #ddd;
+        }
+        
+        .am-gallery h3{
+        	margin-top: 0!important;
+        	text-align: center;
+        }
+        .am-gallery h2{
+        	margin: 0!important;
+        	font-size: 24px!important;
+        	color: #FF0000!important;
+        	display: block;
+        	margin-right: 0!important;
+        	font-weight: bold!important;
+        }
+        .am-gallery p{
+        	font-size: 12px;
+        	float: right;
+        	margin-top: 15px;
+        	font-weight: normal;
+        	color: #aaa;
+        }
+        .am-gallery h4{
+        	margin: 0px!important;
+        	float: right;
+        }

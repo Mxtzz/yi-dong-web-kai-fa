@@ -30,76 +30,15 @@
     <meta name="msapplication-TileColor" content="#0e90d2">
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/cart.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <style type="text/css">
-        #pageone{
-            margin: 0 auto;
-            width: 100%;
+        .am-intro-hd{
+        	background: #EEEEEE!important;
+        	color: #000000!important;
         }
-        .main{
-        	height: 600px;
-        }
-        
-        /*头样式*/
-        .am-header{
-        	background: #F47920;	
-        }
-        
-        /*商品列表*/
-    	.shop_list{
-    		width: 100%;
-    	}
-        .shop_list td{
-        	padding: 10px;
-        }
-        #shop_img img{
-        	width: 150px;
-        }
-        	/*商品名称*/
-        .shop_name{
+        .choice{
         	
-        }
-        .shop_delete{
-        	float: right;
-        }
-        	/*商品类型*/
-        .shop_class{
-        	color: #999;
-        	/*margin: 0;*/
-        }
-        	/*商品价格*/
-        #shop_price{
-        	font-size: 24px;
-        	color: #FF0000;
-        	
-        }
-        .text_box{
-        	width: 30px;
-        }
-        
-        /*footer样式*/
-        .am-navbar{
-        	box-shadow: 0 0 10px #ccc;
-        	background: #fff;
-        }
-        
-        #zongjia{
-        	text-align: center;
-        }
-        .zongjia_num{
-        	font-size: 26px;
-        	color: #ff0000;
-        }
-        .check_bill{
-        	padding: 0;
-        	background: #FF0000;
-        }
-        #check_bill{
-        	width: 100%;
-        	font-size: 22px;
-        	font-weight: bold;
-        	color:#fff;
-        	background: #FF0000;
         }
     </style>
 </head>
@@ -108,151 +47,45 @@
         <!--页头-->
         <header data-am-widget="header" class="am-header am-header-fixed am-header-default">  
             <div class="am-header-left am-header-nav ">
-                <a href="index-1.html" class="">
+                <a onclick="javascript:history.back(-1);" class="">
                     <i class="am-header-icon am-icon-chevron-left"></i>
                 </a>
             </div>
             <div class="am-header-title">
             	<h3>购物车</h3>
             </div>
-            
+            <div class="am-header-right am-header-nav ">
+                <a href="index-1.html" class="">
+                    <i class="am-header-icon am-icon-home"></i>
+                </a>
+            </div>
         </header>
        	<!--主体-->
         <div class="main">
-        	<!--导航栏-->
-        	
-	        <!--商品列表-->
-	        <form class="">
-	        	<table class="shop_list" border="0" cellspacing="" cellpadding="">
-	        		<tr>
-	        			<label>
-	        				<td width="30px">
-	        					<input type="checkbox" name="" value="">
-	        				</td>
-			        		<td id="shop_img">
-			        			<img src="images/shop1.jpg"/>
-			        		</td>
-			        		<td>
-			        			<div class="">
-		    						<span class="shop_name">安利纽崔莱</span>
-		    						<span class="shop_delete">
-		    							<button class="am-icon-trash-o"></button>
-		    						</span>
-		    						<p class="shop_class">大瓶，L</p>
-		    						
-		    						<table id="tab"> 
-										<tr> 
-											<td> 
-											<span class="" id="shop_price">￥</span>
-											<span class="price" id="shop_price">1.50</span>
-												<div class="">
-													<input class="min" name="" type="button" value="-" /> 
-													<input class="text_box" name="" type="text" value="1" /> 
-													<input class="add" name="" type="button" value="+" /> 
-												</div>
-											</td>
-								
-										</tr>
-									</table> 
-									
-		    					</div>
-			        		</td>
-		    			</label>
-	        		</tr>
-	        		
-	        		<tr>
-	        			<label>
-	        				<td width="30px">
-	        					<input type="checkbox" name="" value="">
-	        				</td>
-			        		<td id="shop_img">
-			        			<img src="images/shop1.jpg"/>
-			        		</td>
-			        		<td>
-			        			<div class="">
-		    						<span class="shop_name">安利纽崔莱</span>
-		    						<span class="shop_delete">
-		    							<button class="am-icon-trash-o"></button>
-		    						</span>
-		    						<p class="shop_class">大瓶，L</p>
-		    						
-		    						<table id="tab"> 
-										<tr> 
-											<td> 
-											<span class="" id="shop_price">￥</span>
-											<span class="price" id="shop_price">1.50</span>
-												<div class="">
-													<input class="min" name="" type="button" value="-" /> 
-													<input class="text_box" name="" type="text" value="1" /> 
-													<input class="add" name="" type="button" value="+" /> 
-												</div>
-											</td>
-								
-										</tr>
-									</table> 
-									
-		    					</div>
-			        		</td>
-		    			</label>
-	        		</tr>
-	        		<!--<tr>
-	        			<label>
-	        				<td width="30px">
-	        					<input type="checkbox" name="" value="">
-	        				</td>
-			        		<td id="shop_img">
-			        			<img src="images/shop1.jpg"/>
-			        		</td>
-			        		<td>
-			        			<div class="">
-		    						<span class="shop_name">安利纽崔莱</span>
-		    						<span class="shop_delete">
-		    							<button class="am-icon-trash-o"></button>
-		    						</span>
-		    						<p class="shop_class">大瓶，L</p>
-		    						
-		    						<table id="tab"> 
-										<tr> 
-											<td> 
-											<span class="" id="shop_price">￥</span>
-											<span class="price" id="shop_price">1.50</span>
-											&nbsp;
-											<input class="min" name="" type="button" value="-" /> 
-											<input class="text_box" name="" type="text" value="1" /> 
-											<input class="add" name="" type="button" value="+" /> 
-											</td> 
-										</tr>
-									</table> 
-									
-		    					</div>
-			        		</td>
-		    			</label>
-	        		</tr>-->
-	        		
-	        	</table>
-	        	
-	        </form>    	
-	        
-        </div>
-        
-    	<!--<button data-am-smooth-scroll class="am-btn am-round am-icon-arrow-up"></button>-->
+	        <div class="content">
+				<div class="carList">
+				</div>
+			</div>
         <!--底部导航-->
         <div data-am-widget="navbar" class="am-navbar am-cf am-navbar-default" id="">
     		<div class="am-g">
+    			<div class="am-u-sm-2">
+					<input type="checkbox" id="allchoice">
+					
+				</div>
 				<div class="am-u-sm-3" id="zongjia">
+					
 					<h2>合计：</h2>
 				</div>
-				<div class="am-u-sm-5 zongjia_num">
+				<div class="am-u-sm-4 zongjia_num">
 					<p>￥<label id="total"></label></p>
 				</div>
 				
-				<div class="am-u-sm-4 check_bill" id="" >
+				<div class="am-u-sm-3 check_bill" id="" >
 					<button type="button" class="" id="check_bill">结&nbsp;算</button>
 				</div>
 			</div>
         </div>
-        
-        <!--侧边栏-->
         
         
     </div>
@@ -260,33 +93,6 @@
     <!--[if (gte IE 9)|!(IE)]><!-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
-    <script type="text/javascript">
-    	
-    	$(function(){ 
-			$(".add").click(function(){ 
-				var t=$(this).parent().find('input[class*=text_box]'); 
-				t.val(parseInt(t.val())+1) 
-				setTotal(); 
-			}) 
-			$(".min").click(function(){ 
-				var t=$(this).parent().find('input[class*=text_box]'); 
-				t.val(parseInt(t.val())-1) 
-				if(parseInt(t.val())<0){ 
-					t.val(0); 
-				} 
-			setTotal(); 
-			}) 
-			function setTotal(){ 
-				var s=0; 
-				$("#tab td").each(function(){
-					s+=parseInt($(this).find('input[class*=text_box]').val())*parseFloat($(this).find('span[class*=price]').text()); 
-				}); 
-				$("#total").html(s.toFixed(2)); 
-			} 
-			setTotal(); 
-			
-		}) 
-
-    </script>
+    <script src="assets/js/cart.js"></script>
 </body>
 </html>

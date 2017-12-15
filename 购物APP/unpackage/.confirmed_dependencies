@@ -1,0 +1,149 @@
+{
+  "cart.html": {
+    "href": "cart.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/css/style.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/shop1.jpg"
+    ],
+    "refer": [
+      "index-1.html"
+    ],
+    "priority": 0
+  },
+  "shop.html": {
+    "href": "shop.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js"
+    ],
+    "refer": [
+      "cart.html",
+      "index-1.html"
+    ],
+    "priority": 0
+  },
+  "index-2.html": {
+    "href": "index-2.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/css/style.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js"
+    ],
+    "refer": [
+      "index-2.html",
+      "shop.html",
+      "index-1.html",
+      "cart.html"
+    ],
+    "priority": 0
+  },
+  "user.html": {
+    "href": "user.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/class11.png"
+    ],
+    "refer": [
+      "login.html",
+      "index-1.html"
+    ],
+    "priority": 0
+  },
+  "index-1.html": {
+    "href": "index-1.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/css/style.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/ad1.jpg",
+      "images/ad2.jpg",
+      "images/ad3.jpg",
+      "images/ad4.jpg",
+      "images/class1.png",
+      "images/class2.png"
+    ],
+    "refer": [
+      "index-2.html",
+      "shop.html",
+      "cart.html",
+      "index-1.html",
+      "user.html"
+    ],
+    "priority": 0
+  },
+  "reg.html": {
+    "href": "reg.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/head-none.jpg"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/head-icon.jpg"
+    ],
+    "refer": [
+      "index-1.html",
+      "reg.html"
+    ],
+    "priority": 0
+  },
+  "slider.html": {
+    "href": "slider.html",
+    "resources": [
+      "assets/i/favicon.png",
+      "assets/i/app-icon72x72@2x.png",
+      "assets/css/amazeui.min.css",
+      "assets/css/app.css",
+      "assets/js/jquery.min.js",
+      "assets/js/amazeui.min.js",
+      "images/slider-1.jpg",
+      "images/slider-2.jpg",
+      "images/slider-3.jpg",
+      "images/slider-4.jpg"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  }
+}
